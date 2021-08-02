@@ -7,6 +7,7 @@
     // content, before-after
     // icon-style, icon-style-box
     // paste, bracket(f/j)
+    // rem
 
     "rectangle": {
         "prefix": "rectangle",
@@ -203,5 +204,10 @@
         "prefix": ["f", "j", "bracket"],
         "body": ["{", "\t$0", "}"],
         "description": "A new block"
+    },
+    "px to rem": {
+        "prefix": "rem",
+        "body": ["toRem($1)"],
+        "description": "px to rem"
     }
 }
