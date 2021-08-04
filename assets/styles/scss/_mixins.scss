@@ -23,3 +23,16 @@ $breakpoints-down: (
         @content;
     }
 }
+
+//Customize screen size
+@mixin responsive-up($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin responsive-down($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
